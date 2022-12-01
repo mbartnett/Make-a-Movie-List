@@ -1,24 +1,24 @@
 /* Google Fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
 
 /* Headline and subtitle styles to overwrite Bulma */
 
 #custom h1 {
-    font-family: 'Raleway', sans-serif !important;
-    font-weight: 900;
-    font-size: 48px;
+    font-family: 'Limelight', sans-serif !important;
+    font-size: 64px;
 }
 
 #custom h2 {
     font-family: 'Raleway', sans-serif !important;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* Logo styles */
 
 #logo {
-    width: 300px;
+    width: 450px;
 }
 
 /* Primary containers */
@@ -33,7 +33,7 @@
 #left {
     display:flex;
     flex-direction:column;
-    flex-basis: 40%;
+    flex-basis: 50%;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,7 @@
 #right {
     display:flex;
     flex-direction:column;
-    flex-basis: 60%;
+    flex-basis: 50%;
     height: 100vh;
     flex-direction:column;
     justify-content: center;
