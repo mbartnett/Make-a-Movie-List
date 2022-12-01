@@ -27,12 +27,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content:  center;
+    align-content: center;
 }
 
 #left {
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     flex-basis: 49.5%;
     height: 100vh;
     justify-content: center;
@@ -43,11 +43,11 @@
 }
 
 #right {
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     flex-basis: 49.5%;
     height: 100vh;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -72,16 +72,13 @@
 
 /* List styles */
 
-#text-area-list-name {
-    font-weight: 900;
-}
-
 #separator {
     width: 448px;
     height: 1px;
     margin: 10px 0;
     border-top:1px white solid;
 }
+
 
 textarea {
     font-family: 'Poppins', sans-serif;
@@ -92,6 +89,10 @@ textarea {
     border-color: #6699ff !important;
 }
 
+#text-area-list-name {
+    font-weight: 900;
+}
+
 #list-name, #list-item-1, #list-item-2, #list-item-3, #list-item-4, #list-item-5, #list-item-6, #list-item-7, #list-item-8, #list-item-9, #list-item-10 {
     display:flex;
     width: 400px;
@@ -100,7 +101,7 @@ textarea {
     align-content: center;
 }
 
-/* Media queries */
+/* Media queries for height and width */
 
 @media screen and (max-width: 1000px),
        screen and (max-height: 750px) {

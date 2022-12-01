@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Make a Movie List</title>
 </head>
+<!--The "custom" ID is being used to overwrite some Bulma styles-->
 <body id="custom">
 <header>
 </header>
@@ -30,11 +31,12 @@
     <section id="right">
         <!--List name input-->
         <div id="list-name" class="m-1 p-1">
-            <textarea id="text-area-list-name" class="textarea is large mr-2" rows="1" placeholder="NAME YOUR MOVIE LIST"></textarea>
+            <textarea id="text-area-list-name" class="textarea is large is-uppercase mr-2" rows="1" placeholder="NAME YOUR MOVIE LIST"></textarea>
             <a id="list-name-button" class="button"><i class="fa-solid fa-film"></i></a>
         </div>
+        <!--The border separating the list name and the list-->
         <div id="separator"></div>  
-        <!--Series of 10 list items (If we get far enough, we can start with one field and have a button to add more input fields)-->
+        <!--Series of list items-->
         <div id="list-item-1" class="m-1 p-1">
             <textarea id="text-area-1" class="textarea is medium mr-2" rows="1" placeholder="List a movie name"></textarea>
             <a class="button"><i class="fa-solid fa-film"></i></a>
