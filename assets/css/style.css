@@ -61,6 +61,13 @@
     color: white;
 }
 
+.button:hover {
+    height: 48px !important;
+    background-color: #33cc66 !important;
+    border: none !important;
+    color: white;
+}
+
 /* List item styles */
 
 textarea {
