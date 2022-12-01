@@ -1,6 +1,6 @@
 /* Google Fonts import */
 
-@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
 
 /* Headline and subtitle styles to overwrite Bulma */
 
@@ -10,8 +10,8 @@
 }
 
 #custom h2 {
-    font-family: 'Raleway', sans-serif !important;
-    font-weight: 600;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 400;
     font-size: 18px;
 }
 
@@ -56,9 +56,17 @@
 
 .button {
     height: 48px !important;
+    background-color: #6699ff !important;
+    border: none !important;
+    color: white;
 }
 
 /* List item styles */
+
+textarea {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
 
 #list-item-1, #list-item-2, #list-item-3, #list-item-4, #list-item-5, #list-item-6, #list-item-7, #list-item-8, #list-item-9, #list-item-10 {
     display:flex;
