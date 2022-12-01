@@ -39,6 +39,7 @@
     align-items: center;
     align-content: center;
     text-align:center;
+    margin: 10px !important;
 }
 
 #right {
@@ -50,6 +51,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    margin: 10px !important;
 }
 
 /* Button styles  */
@@ -68,17 +70,54 @@
     color: white;
 }
 
-/* List item styles */
+/* List styles */
+
+#text-area-list-name {
+    font-weight: 700;
+}
+
+#separator {
+    width: 450px;
+    height: 1px;
+    margin: 10px 0;
+    /*background-color: white;*/
+    border-top:1px white dashed;
+}
 
 textarea {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
 
-#list-item-1, #list-item-2, #list-item-3, #list-item-4, #list-item-5, #list-item-6, #list-item-7, #list-item-8, #list-item-9, #list-item-10 {
+#list-name, #list-item-1, #list-item-2, #list-item-3, #list-item-4, #list-item-5, #list-item-6, #list-item-7, #list-item-8, #list-item-9, #list-item-10 {
     display:flex;
-    width: 450px;
+    width: 400px;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
+
+/* Media queries */
+
+@media screen and (max-width: 1000px),
+       screen and (max-height: 750px) {
+    #main-flex-container {
+        flex-wrap: wrap;
+    }
+    
+    #left {
+        flex-direction:column;
+        flex-basis: 99%;
+        height: auto;
+        margin: 20px !important;
+    }
+    
+    #right {
+        flex-direction:column;
+        flex-basis: 99%;
+        height: auto;
+        margin: 20px !important;
+    }
+    
+  }
+  
