@@ -1,3 +1,39 @@
-.right {
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
+#custom h1 {
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+#custom h2 {
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content:  center;
+}
+
+#left {
+    display:flex;
+    flex-direction:column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#right {
+    display:flex;
+    flex-direction:column;
+    height: 100vh;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
