@@ -1,4 +1,7 @@
+/* Google Fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Headline and subtitle styles to overwrite Bulma */
 
 #custom h1 {
     font-family: 'Raleway', sans-serif !important;
@@ -12,25 +15,25 @@
     font-size: 16px;
 }
 
-#flex {
+/* Logo styles */
+
+#logo {
+    width: 300px;
+}
+
+/* Primary containers */
+
+#main-flex-container {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content:  center;
 }
 
-#logo {
-    width: 300px;
-}
-
-.button {
-    height: 48px !important;
-}
-
 #left {
     display:flex;
     flex-direction:column;
-    flex-basis: 50%;
+    flex-basis: 40%;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -41,7 +44,7 @@
 #right {
     display:flex;
     flex-direction:column;
-    flex-basis: 50%;
+    flex-basis: 60%;
     height: 100vh;
     flex-direction:column;
     justify-content: center;
@@ -49,7 +52,15 @@
     align-content: center;
 }
 
-#list-item {
+/* Button styles  */
+
+.button {
+    height: 48px !important;
+}
+
+/* List item styles */
+
+#list-item-1, #list-item-2, #list-item-3, #list-item-4, #list-item-5, #list-item-6, #list-item-7, #list-item-8, #list-item-9, #list-item-10 {
     display:flex;
     width: 450px;
     justify-content: center;

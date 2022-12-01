@@ -4,63 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bulma CDN link-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!--Font Awesome CDN link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Google fonts links-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--Custom CSS links-->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Make a Movie List</title>
 </head>
 <body id="custom">
 <header>
 </header>
-<main id="flex" class="has-background-black is-align-items-center">
-    <section id="left" class="m-2 p-1">
+<!--Main flex container-->
+<main id="main-flex-container" class="has-background-black is-align-items-center">
+    <!--Left section-->
+    <section id="left" class="m-2">
+        <!--Logo, header, and subtitle-->
         <figure id="logo" class="image is-inline-block">
             <img src="assets/images/slate.png">
           </figure>
         <h1 id="raleway-head" class="title is-1 has-text-white">MAKE A MOVIE LIST</h1>
         <h2 class="subtitle is-5 has-text-white">Finally have an answer to the question, "What's your favorite movie?"</p>
     </section>
+    <!--Right section-->
     <section id="right" class="m-5 p-5">
-        <div id="list-item" class="m-1 p-1">
+        <!--Series of 10 list items (If we get far enough, we can start with one field and have a button to add more input fields)-->
+        <div id="list-item-1" class="m-1 p-1">
             <textarea id="text-area-1" class="textarea is medium mr-2" rows="1" placeholder="List a movie"></textarea>
             <a class="button"><i class="fa-solid fa-film"></i></a>
         </div>
-        <div id="list-item" class="m-1 p-1">
+        <div id="list-item-2" class="m-1 p-1">
             <textarea id="text-area-2" class="textarea is medium mr-2" rows="1" placeholder=""></textarea>
             <a class="button"><i class="fa-solid fa-film"></i></a>
         </div>
-        <div id="list-item" class="m-1 p-1">
+        <div id="list-item-3" class="m-1 p-1">
             <textarea id="text-area-3" class="textarea is medium mr-2" rows="1" placeholder=""></textarea>
             <a class="button"><i class="fa-solid fa-film"></i></a>
         </div>
-        <div id="list-item" class="m-1 p-1">
+        <div id="list-item-4" class="m-1 p-1">
             <textarea id="text-area-4" class="textarea is medium mr-2" rows="1" placeholder=""></textarea>
             <a class="button"><i class="fa-solid fa-film"></i></a>
         </div>
-        <div id="list-item" class="m-1 p-1">
+        <div id="list-item-5" class="m-1 p-1">
             <textarea id="text-area-5" class="textarea is medium mr-2" rows="1" placeholder=""></textarea>
             <a class="button"><i class="fa-solid fa-film"></i></a>
         </div>
-        <div id="list-item" class="m-1 p-1">
+        <div id="list-item-6" class="m-1 p-1">
             <textarea id="text-area-6" class="textarea is medium mr-2" rows="1" placeholder=""></textarea>
             <a class="button"><i class="fa-solid fa-film"></i></a>
         </div>
-        <div id="list-item" class="m-1 p-1">
+        <div id="list-item-7" class="m-1 p-1">
             <textarea id="text-area-7" class="textarea is medium mr-2" rows="1" placeholder=""></textarea>
             <a class="button"><i class="fa-solid fa-film"></i></a>
         </div>
-        <div id="list-item" class="m-1 p-1">
+        <div id="list-item-8" class="m-1 p-1">
             <textarea id="text-area-8" class="textarea is medium mr-2" rows="1" placeholder=""></textarea>
             <a class="button"><i class="fa-solid fa-film"></i></a>
         </div>
-        <div id="list-item" class="m-1 p-1">
+        <div id="list-item-9" class="m-1 p-1">
             <textarea id="text-area-9" class="textarea is medium mr-2" rows="1" placeholder=""></textarea>
             <a class="button"><i class="fa-solid fa-film"></i></a>
         </div>
-        <div id="list-item" class="m-1 p-1">
+        <div id="list-item-10" class="m-1 p-1">
             <textarea id="text-area-10" class="textarea is medium mr-2" rows="1" placeholder=""></textarea>
             <a class="button"><i class="fa-solid fa-film"></i></a>
         </div>
@@ -68,8 +77,9 @@
 </main>
 <footer>
 </footer>
+<!--jQuery library and custom Javascript links-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>  
-<script src="assets/js/script.js"></script>   
+<script src="assets/js/script.js"></script> 
 </body>
 </html>
 
