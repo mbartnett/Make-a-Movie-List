@@ -1,6 +1,6 @@
 /* Google Fonts import */
 
-@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
 
 /* Headline and subtitle styles to overwrite Bulma */
 
@@ -73,20 +73,23 @@
 /* List styles */
 
 #text-area-list-name {
-    font-weight: 700;
+    font-weight: 900;
 }
 
 #separator {
-    width: 450px;
+    width: 448px;
     height: 1px;
     margin: 10px 0;
-    /*background-color: white;*/
-    border-top:1px white dashed;
+    border-top:1px white solid;
 }
 
 textarea {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+}
+
+.textarea:active, .textarea:focus {
+    border-color: #6699ff !important;
 }
 
 #list-name, #list-item-1, #list-item-2, #list-item-3, #list-item-4, #list-item-5, #list-item-6, #list-item-7, #list-item-8, #list-item-9, #list-item-10 {
@@ -101,23 +104,27 @@ textarea {
 
 @media screen and (max-width: 1000px),
        screen and (max-height: 750px) {
+    #logo {
+        width: 250px;
+    }
+
     #main-flex-container {
-        flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 100vh;
     }
-    
+
     #left {
-        flex-direction:column;
-        flex-basis: 99%;
-        height: auto;
-        margin: 20px !important;
+    flex-direction:column;
+    flex-basis: 99%;
+    height: auto;
+    margin: 20px !important;
     }
-    
+
     #right {
-        flex-direction:column;
-        flex-basis: 99%;
-        height: auto;
-        margin: 20px !important;
+    flex-direction:column;
+    flex-basis: 99%;
+    height: auto;
+    margin: 20px !important;
     }
-    
-  }
+}
   
