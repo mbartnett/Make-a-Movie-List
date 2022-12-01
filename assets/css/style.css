@@ -3,7 +3,7 @@
 #custom h1 {
     font-family: 'Raleway', sans-serif !important;
     font-weight: 900;
-    font-size: 48px;
+    font-size: 56px;
 }
 
 #custom h2 {
@@ -19,9 +19,14 @@
     align-content:  center;
 }
 
+#logo {
+    width: 320px;
+}
+
 #left {
     display:flex;
     flex-direction:column;
+    flex-basis: 50%;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -31,8 +36,17 @@
 #right {
     display:flex;
     flex-direction:column;
+    flex-basis: 50%;
     height: 100vh;
     flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#list-item {
+    display:flex;
+    width: 450px;
     justify-content: center;
     align-items: center;
     align-content: center;
