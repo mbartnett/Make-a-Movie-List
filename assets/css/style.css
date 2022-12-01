@@ -112,6 +112,7 @@ textarea {
     #main-flex-container {
     flex-wrap: wrap;
     height: 100vh;
+    overflow-y: scroll;
     }
 
     #left {
