@@ -18,7 +18,8 @@
 /* Logo styles */
 
 #logo {
-    width: 450px;
+    display: block;
+    width: 450px;    
 }
 
 /* Primary containers */
@@ -123,8 +124,17 @@ textarea {
 
 @media screen and (max-width: 1000px),
        screen and (max-height: 750px) {
+
+    #custom h1 {
+    font-size: 48px;
+    }
+
+    #custom h2 {
+        font-size: 16px;
+        }
+
     #logo {
-        width: 250px;
+    width: 250px;
     }
 
     #main-flex-container {
@@ -137,14 +147,14 @@ textarea {
     flex-direction:column;
     flex-basis: 99%;
     height: auto;
-    margin: 20px !important;
+    margin:  10px 0 !important;
     }
 
     #right {
     flex-direction:column;
     flex-basis: 99%;
     height: auto;
-    margin: 20px !important;
+    margin: 10px !important;
     }
 }
   
