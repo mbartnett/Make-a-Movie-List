@@ -32,10 +32,13 @@
         <!--List name input-->
         <div id="list-name" class="m-1 p-1">
             <textarea id="text-area-list-name" class="textarea is large is-uppercase mr-2" rows="1" placeholder="NAME YOUR MOVIE LIST"></textarea>
-            <a id="list-name-button" class="button"><i class="fa-solid fa-film"></i></a>
+            <a id="list-name-button" class="js-modal-trigger button" data-target="modal-js-example"><i class="fa-solid fa-film"></i></a>
+            <!-- <button class="js-modal-trigger" data-target="modal-js-example">
+                Open JS example modal
+              </button> -->
         </div>
         <!--The border separating the list name and the list-->
-        <div id="separator"></div>  
+        <div id="separator"></div>
         <!--Series of list items-->
         <div id="list-item-1" class="m-1 p-1">
             <textarea id="text-area-1" class="textarea is medium mr-2" rows="1" placeholder="List a movie name"></textarea>
@@ -77,7 +80,6 @@
             <textarea id="text-area-10" class="textarea is medium mr-2" rows="1"></textarea>
             <a class="button"><i class="fa-solid fa-film"></i></a>
         </div>
-        
     </section>
     <!--Error modal-->
     <section>
@@ -95,13 +97,13 @@
         <!--Error modal trigger-->
         <button class="button" data-target="error-modal">
         </button>
-    </section>
+    </section>    
+
 </main>
 <footer>
 </footer>
 <!--jQuery library and custom Javascript links-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>  
-<script src="assets/js/script.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
-
