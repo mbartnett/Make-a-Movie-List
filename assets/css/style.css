@@ -56,14 +56,32 @@
 
 /* Button styles  */
 
-.button {
+.button, #list-button {
     height: 48px !important;
     background-color: #6699ff !important;
     border: none !important;
     color: white;
 }
 
-.button:hover {
+.button:hover, #list-button:hover {
+    width: 48px !important;
+    height: 48px !important;
+    background-color: #33cc66 !important;
+    border: none !important;
+    color: white;
+}
+
+#movie-button {
+    width: 48px !important;
+    height: 48px !important;
+    background-color: #ff0000 !important;
+    border: none !important;
+    color: white;
+    /* visibility: hidden; */
+}
+
+#movie-button:hover {
+    width: 48px !important;
     height: 48px !important;
     background-color: #33cc66 !important;
     border: none !important;
@@ -73,7 +91,7 @@
 /* List styles */
 
 #separator {
-    width: 448px;
+    width: 500px;
     height: 1px;
     margin: 10px 0;
     border-top:1px white solid;
