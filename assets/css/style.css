@@ -63,7 +63,7 @@
     color: white;
 }
 
-.button:hover, #list-button:hover {
+.button:hover, #list-save-button:hover {
     width: 48px !important;
     height: 48px !important;
     background-color: #33cc66 !important;
@@ -71,12 +71,13 @@
     color: white;
 }
 
-#movie-button {
+#movie-button, #list-save-button {
     width: 48px !important;
     height: 48px !important;
-    background-color: #ff0000 !important;
+    background-color: #8e8e8e !important;
     border: none !important;
     color: white;
+    opacity: 25%;
     /* visibility: hidden; */
 }
 
@@ -96,7 +97,6 @@
     margin: 10px 0;
     border-top:1px white solid;
 }
-
 
 textarea {
     font-family: 'Poppins', sans-serif;
@@ -130,7 +130,7 @@ textarea {
     #main-flex-container {
     flex-wrap: wrap;
     height: 100vh;
-    overflow-y: scroll;
+    overflow: scroll;
     }
 
     #left {
