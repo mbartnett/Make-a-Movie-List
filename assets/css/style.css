@@ -18,7 +18,8 @@
 /* Logo styles */
 
 #logo {
-    width: 450px;
+    display: block;
+    width: 450px;    
 }
 
 /* Primary containers */
@@ -56,14 +57,33 @@
 
 /* Button styles  */
 
-.button {
+.button, #list-button {
     height: 48px !important;
     background-color: #6699ff !important;
     border: none !important;
     color: white;
 }
 
-.button:hover {
+.button:hover, #list-save-button:hover {
+    width: 48px !important;
+    height: 48px !important;
+    background-color: #33cc66 !important;
+    border: none !important;
+    color: white;
+}
+
+#list-save-button, #movie-button-1, #movie-button-2, #movie-button-3, #movie-button-4, #movie-button-5, #movie-button-6, #movie-button-7, #movie-button-8, #movie-button-9, #movie-button-10 {
+    width: 48px !important;
+    height: 48px !important;
+    background-color: #8e8e8e !important;
+    border: none !important;
+    color: white;
+    opacity: 25%;
+    /* visibility: hidden; */
+}
+
+#movie-button:hover {
+    width: 48px !important;
     height: 48px !important;
     background-color: #33cc66 !important;
     border: none !important;
@@ -73,12 +93,11 @@
 /* List styles */
 
 #separator {
-    width: 448px;
+    width: 500px;
     height: 1px;
     margin: 10px 0;
     border-top:1px white solid;
 }
-
 
 textarea {
     font-family: 'Poppins', sans-serif;
@@ -105,28 +124,37 @@ textarea {
 
 @media screen and (max-width: 1000px),
        screen and (max-height: 750px) {
+
+    #custom h1 {
+    font-size: 48px;
+    }
+
+    #custom h2 {
+        font-size: 16px;
+        }
+
     #logo {
-        width: 250px;
+    width: 250px;
     }
 
     #main-flex-container {
     flex-wrap: wrap;
     height: 100vh;
-    overflow-y: scroll;
+    overflow: scroll;
     }
 
     #left {
     flex-direction:column;
     flex-basis: 99%;
     height: auto;
-    margin: 20px !important;
+    margin:  10px 0 !important;
     }
 
     #right {
     flex-direction:column;
     flex-basis: 99%;
     height: auto;
-    margin: 20px !important;
+    margin: 10px !important;
     }
 }
   

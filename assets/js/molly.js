@@ -1,5 +1,5 @@
 // Event listener
-document.getElementById("search-button").addEventListener("click", fetchMovies);
+document.getElementById("save-button-1").addEventListener("click", fetchMovies);
 
 // Function to call api for movies
 function fetchMovies() {
