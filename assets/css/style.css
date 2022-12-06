@@ -58,6 +58,7 @@
 /* Button styles  */
 
 .button, #list-name-button {
+    width: 48px !important;
     height: 48px !important;
     background-color: #6699ff !important;
     border: none !important;
