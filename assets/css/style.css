@@ -17,7 +17,7 @@
 
 /* Logo styles */
 
-#logo {
+.logo-image {
     display: block;
     width: 450px;    
 }
@@ -134,8 +134,9 @@ textarea {
         font-size: 16px;
         }
 
-    #logo {
-    width: 250px;
+    .logo-image {
+    width: 250px !important;
+    margin-top: 250px !important;
     }
 
     #main-flex-container {
