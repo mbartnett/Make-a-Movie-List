@@ -10,7 +10,9 @@ $(document).ready (function () {
             moviesArr = JSON.parse(localStorage.getItem("myMovies"))
         }
         moviesArr[index] = input;
-        localStorage.setItem("myMovies", JSON.stringify(moviesArr))
+        localStorage.setItem("myMovies", JSON.stringify(moviesArr))      
+        var savedButton = document.getElementById("list-name-button");
+        savedButton.setAttribute("id", "saved-button")
     })
 
     var tempArr = JSON.parse(localStorage.getItem("myMovies"))

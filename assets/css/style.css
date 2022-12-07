@@ -65,7 +65,7 @@
     color: white;
 }
 
-.button:hover, #list-save-button:hover {
+.button:hover, #list-save-button:hover, #saved-button {
     width: 48px !important;
     height: 48px !important;
     background-color: #33cc66 !important;
