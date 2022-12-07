@@ -1,12 +1,21 @@
-// Event listener
-document.getElementById("save-button-1").addEventListener("click", fetchMovies);
+// Event listener for save button
+for (var index = 1; 
+  index < 11; 
+  index++) {
+    var saveButton = document.getElementById("save-button-" + index)
+    saveButton.addEventListener("click", fetchMovies);
+    saveButton.myParam = index
+}
 
 // Function to call api for movies
-function fetchMovies() {
+function fetchMovies(event) {
   console.log("calling fetchMovies");
+  console.log(event)
+  console.log(event.target.myParam)
+  var index = event.target.myParam
   var apiKey = "1181861f";
   //   var url = `http://www.omdbapi.com/?i=tt3896198&apikey=1181861f&s=batman`
-  var searchTitle = document.getElementById("text-area-1").value;
+  var searchTitle = document.getElementById("text-area-" + index).value;
   var url = `http://www.omdbapi.com/?i=tt3896198&apikey=${apiKey}&s=${searchTitle}`;
 
   console.log("input: " + JSON.stringify(searchTitle));
@@ -20,7 +29,7 @@ function fetchMovies() {
     })
     .then((data) => {
       console.log("data: " + JSON.stringify(data));
-      console.log("data.Search: " + JSON.stringify(data.Title));
+      console.log("data.Search: " + JSON.stringify(data.Search));
       console.log("data.Search[0].Title: " + data.Search[0].Title);
 
       var html = "";
