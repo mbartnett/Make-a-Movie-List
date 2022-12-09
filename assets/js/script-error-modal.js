@@ -1,11 +1,9 @@
 //Error Modal
 document.addEventListener('DOMContentLoaded', () => {
     // Functions to open and close a modal
-    if (Response.status === 200) {
-      console.log("it works!");
-    } else { function openModal($el) {
+    function openModal($el) {
       $el.classList.add('is-active');  
-    }}
+    }
   
     function closeModal($el) {
       $el.classList.remove('is-active');
