@@ -57,7 +57,7 @@
 
 /* Button styles  */
 
-.button, .list-name-button {
+.button {
     width: 48px !important;
     height: 48px !important;
     background-color: #6699ff !important;
@@ -65,35 +65,7 @@
     color: white;
 }
 
-.button:hover, #list-save-button:hover {
-    width: 48px !important;
-    height: 48px !important;
-    background-color: #33cc66 !important;
-    border: none !important;
-    color: white;
-}
-.green-button {
-    background-color: #33cc66 !important;
-}
-.blue-button {
-    background-color: #6699ff !important;
-}
-
-#list-save-button, #movie-button-1, #movie-button-2, #movie-button-3, #movie-button-4, #movie-button-5, #movie-button-6, #movie-button-7, #movie-button-8, #movie-button-9, #movie-button-10 {
-    width: 48px !important;
-    height: 48px !important;
-    background-color: #8e8e8e !important;
-    border: none !important;
-    color: white;
-    opacity: 25%;
-    /* visibility: hidden; */
-}
-
-#movie-button:hover {
-    width: 48px !important;
-    height: 48px !important;
-    background-color: #33cc66 !important;
-    border: none !important;
+.button:hover {
     color: white;
 }
 
