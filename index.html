@@ -40,8 +40,8 @@
         <!--Series of list items-->
         <div id="list-item-1" class="m-1 p-1">
             <textarea id="text-area-1" class="textarea is medium mr-2" rows="1" placeholder="List a movie name"></textarea>
-            <a id ="save-button-1" class="button mr-2" data-index="1"><i class="fa-solid fa-floppy-disk"></i></a>
-            <a id="movie-button-1" class="button js-modal-trigger button" data-target="error-modal"><i class="fa-solid fa-film"></i></a>
+            <a id ="save-button-1" class="button mr-2 js-modal-trigger button" data-target="error-modal" data-index="1"><i class="fa-solid fa-floppy-disk"></i></a>
+            <button id="movie-button-1" class="button fa-solid fa-film"></button>
         </div>
         <div id="list-item-2" class="m-1 p-1">
             <textarea id="text-area-2" class="textarea is medium mr-2" rows="1"></textarea>
@@ -89,8 +89,9 @@
             <a id="movie-button-10" class="button js-modal-trigger button"data-target="error-modal"><i class="fa-solid fa-film"></i></a>
         </div>
     </section>
+
     <!--Error modal-->
-    <section>
+    <!--<section>
         <div id="error-modal" class="modal">
             <div class="modal-background"></div>
             <div class="modal-content">
@@ -101,7 +102,7 @@
             <button class="modal-close is-large" aria-label="close"></button>
         </div>
     </section>    
-    <div id="movies"></div>
+--><div id="movies"></div>
 </main>
 <footer>
 </footer>
