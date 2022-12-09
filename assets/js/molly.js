@@ -2,7 +2,7 @@
 for (var index = 1; 
   index < 11; 
   index++) {
-    var saveButton = document.getElementById("save-button-" + index)
+    var saveButton = document.getElementById("movie-button-" + index)
     saveButton.addEventListener("click", fetchMovies);
     saveButton.myParam = index
 }
