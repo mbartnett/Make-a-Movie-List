@@ -18,8 +18,9 @@ $(document).ready (function () {
         }
         moviesArr[index] = input;
         localStorage.setItem("myMovies", JSON.stringify(moviesArr))      
-        var savedButton = document.getElementById("list-name-button");
-        savedButton.setAttribute("id", "saved-button")
+// The two following lines are generating errors, not sure if they're necessary or should be reevaluated 
+        // var savedButton = document.getElementsByClassName("list-name-button");
+        // savedButton.setAttribute("class", "save-button")
     })
 
     var tempArr = JSON.parse(localStorage.getItem("myMovies"))
