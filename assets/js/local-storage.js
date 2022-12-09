@@ -1,6 +1,6 @@
 $(document).ready (function () {
 
-    updateSaveBtn()
+
     $('.button').on('click', function() {
         var input = $(this).siblings('textarea').val();   
         var index = $(this).attr('data-index');
@@ -10,25 +10,12 @@ $(document).ready (function () {
             moviesArr = JSON.parse(localStorage.getItem("myMovies"))
         }
         moviesArr[index] = input;
-        localStorage.setItem("myMovies", JSON.stringify(moviesArr))
-        updateSaveBtn()
-//        var savedButton = document.getElementById("list-name-button");
-//        savedButton.setAttribute("id", "saved-button")
+        localStorage.setItem("myMovies", JSON.stringify(moviesArr))      
+        var savedButton = document.getElementById("list-name-button");
+        savedButton.setAttribute("id", "saved-button")
     })
-    var tempArr = JSON.parse(localStorage.getItem("myMovies"))
-    function updateSaveBtn(){
-        let tempArr = JSON.parse(localStorage.getItem("myMovies"))
-        for(var i=1;i<=tempArr.length;i++){
-            currbtn = `save-button-${i}`;
-            var savedButton = doc.getElementById(currbtn);
-            if(tempArr[i]!==null) {
-                savedButton.classList.add("green-button");
-            } else{
-                savedButton.classList.remove("green-button");
-            }
-        }
-    }
 
+    var tempArr = JSON.parse(localStorage.getItem("myMovies"))
     $('#text-area-list-name').val(tempArr[0]);
     $('#text-area-1').val(tempArr[1]);
     $('#text-area-2').val(tempArr[2]);
@@ -42,4 +29,3 @@ $(document).ready (function () {
     $('#text-area-10').val(tempArr[10]);
 
 })
-
