@@ -52,7 +52,7 @@ function fetchMovies(event) {
         html += `<br><br>`;
       }
 
-      document.getElementById("movies").innerHTML = html;
+      document.getElementById("data-modal").innerHTML = html;
     })
     .catch((error) => {
       //handle error
