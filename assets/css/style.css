@@ -1,16 +1,16 @@
 /* Google Fonts import */
 
-@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
 
 /* Headline and subtitle styles to overwrite Bulma */
 
 #custom h1 {
-    font-family: 'Limelight', sans-serif !important;
+    font-family: "Limelight", sans-serif !important;
     font-size: 64px;
 }
 
 #custom h2 {
-    font-family: 'Poppins', sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
     font-weight: 400;
     font-size: 18px;
 }
@@ -19,7 +19,7 @@
 
 .logo-image {
     display: block;
-    width: 450px;    
+    width: 450px;
 }
 
 /* Primary containers */
@@ -39,7 +39,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    text-align:center;
+    text-align: center;
     margin: 10px !important;
 }
 
@@ -62,11 +62,12 @@
     height: 48px !important;
     background-color: #6699ff !important;
     border: none !important;
-    color: white;
+    color: white !important;
 }
 
-.button:hover {
-    color: white;
+.button:hover,
+.button:active {
+    color: white !important;
 }
 
 /* List styles */
@@ -75,15 +76,16 @@
     width: 500px;
     height: 1px;
     margin: 10px 0;
-    border-top:1px white solid;
+    border-top: 1px white solid;
 }
 
 textarea {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
 
-.textarea:active, .textarea:focus {
+.textarea:active,
+.textarea:focus {
     border-color: #6699ff !important;
 }
 
@@ -91,8 +93,18 @@ textarea {
     font-weight: 900;
 }
 
-#list-name, #list-item-1, #list-item-2, #list-item-3, #list-item-4, #list-item-5, #list-item-6, #list-item-7, #list-item-8, #list-item-9, #list-item-10 {
-    display:flex;
+#list-name,
+#list-item-1,
+#list-item-2,
+#list-item-3,
+#list-item-4,
+#list-item-5,
+#list-item-6,
+#list-item-7,
+#list-item-8,
+#list-item-9,
+#list-item-10 {
+    display: flex;
     width: 400px;
     justify-content: center;
     align-items: center;
@@ -102,42 +114,41 @@ textarea {
 /* Media queries for height and width */
 
 @media screen and (max-width: 1000px),
-       screen and (max-height: 750px) {
-
+screen and (max-height: 750px) {
     #custom h1 {
-    font-size: 48px;
+        font-size: 48px;
     }
 
     #custom h2 {
         font-size: 16px;
-        }
+    }
 
     .logo-image {
-    width: 250px !important;
-    margin-top: 250px !important;
+        width: 250px !important;
+        margin-top: 250px !important;
     }
 
     #main-flex-container {
-    flex-wrap: wrap;
-    height: 100vh;
-    overflow: scroll;
+        flex-wrap: wrap;
+        height: 100vh;
+        overflow: scroll;
     }
 
     #left {
-    flex-direction:column;
-    flex-basis: 99%;
-    height: auto;
-    margin:  10px 0 !important;
+        flex-direction: column;
+        flex-basis: 99%;
+        height: auto;
+        margin: 10px 0 !important;
     }
 
     #right {
-    flex-direction:column;
-    flex-basis: 99%;
-    height: auto;
-    margin: 10px !important;
+        flex-direction: column;
+        flex-basis: 99%;
+        height: auto;
+        margin: 10px !important;
     }
 }
-  
-.movie-image{
-    height: 180px
+
+.movie-image {
+    height: 180px;
 }
