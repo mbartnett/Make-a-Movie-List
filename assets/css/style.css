@@ -126,27 +126,18 @@ textarea {
 .modal {
     background-color: white;
     position: fixed;
-    width: 80%;
-    height: 80%;
-    margin: auto;
-    padding: 100px;
+    top: 10%;
+    bottom: 10%;
+    left: 20%;
+    right: 20%;
     text-align: center;
 }
 
-.modal-background {
+/* .modal-background {
     margin: auto;
     width: 90%;
-    background-color: white;
-}
-
-.modal-close {
-    cursor: pointer !important;
-    position: fixed !important;
-    top: 5px;
-    right: 10px;
-    font-size: 1.5em;
-    color: #000;
-}
+    background-color: #6699ff;
+} */
 
 .movie-image {
     min-height: 500px;

@@ -16,7 +16,7 @@ for (var index = 1;
         return response.json();
       })
       .then((data) => {
-        console.log(data.results[0].title);
+        console.log(data.results[0].searchTitle);
         console.log(data.results[0].release_date);
       });
     }
