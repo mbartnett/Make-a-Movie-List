@@ -42,8 +42,8 @@ function fetchMovies(event) {
         // Year
         html += `<h4>${data.Search[i].Year}</h4>`;
 
-        // Type
-        html += `<h5>${data.Search[i].Type}</h5>`;
+        // // Type
+        // html += `<h5>${data.Search[i].Type}</h5>`;
 
         // Image
         html += `<img class="movie-image" src="${data.Search[i].Poster}" alt="${data.Search[i].Title} image">`;
