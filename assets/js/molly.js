@@ -1,10 +1,10 @@
 // Event listener for save button
-for (var index = 1; 
-  index < 11; 
+for (var index = 1;
+  index < 11;
   index++) {
-    var saveButton = document.getElementById("movie-button-" + index)
-    saveButton.addEventListener("click", fetchMovies);
-    saveButton.myParam = index
+  var saveButton = document.getElementById("movie-button-" + index)
+  saveButton.addEventListener("click", fetchMovies);
+  saveButton.myParam = index
 }
 
 // Function to call api for movies
@@ -34,13 +34,17 @@ function fetchMovies(event) {
 
       var html = "";
 
-      for (let i = 0; i < data.Search.length; i++) {
+      // for (let i = 0; i < data.Search.length; i++) {
+      for (let i = 0; i < 1; i++) {
         // Title
         html += `<h3>${data.Search[i].Title}</h3>`;
         // html += '<h3>' + data.Search[i].Title + '</h3>'
 
         // Year
         html += `<h4>${data.Search[i].Year}</h4>`;
+
+        // // Plot
+        // html += `<p>${data.Search[i].Plot}</p>`;
 
         // // Type
         // html += `<h5>${data.Search[i].Type}</h5>`;
@@ -49,7 +53,7 @@ function fetchMovies(event) {
         html += `<img class="movie-image" src="${data.Search[i].Poster}" alt="${data.Search[i].Title} image">`;
 
         // Add a space after the image
-        html += `<br><br>`;
+        html += `<br><br>Press ESC to close`;
       }
 
       document.getElementById("data-modal").innerHTML = html;
