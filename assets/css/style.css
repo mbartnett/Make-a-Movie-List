@@ -11,8 +11,20 @@
 
 #custom h2 {
     font-family: "Poppins", sans-serif !important;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 18px;
+}
+
+.modal h3 {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.modal h4 {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 /* Logo styles */
@@ -111,6 +123,35 @@ textarea {
     align-content: center;
 }
 
+.modal {
+    background-color: white;
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding: 100px;
+    text-align: center;
+}
+
+.modal-background {
+    margin: auto;
+    width: 90%;
+    background-color: white;
+}
+
+.modal-close {
+    cursor: pointer !important;
+    position: fixed !important;
+    top: 5px;
+    right: 10px;
+    font-size: 1.5em;
+    color: #000;
+}
+
+.movie-image {
+    min-height: 500px;
+}
+
 /* Media queries for height and width */
 
 @media screen and (max-width: 1000px),
@@ -147,28 +188,4 @@ screen and (max-height: 750px) {
         height: auto;
         margin: 10px !important;
     }
-}
-
-.movie-image {
-    height: 180px;
-}
-
-/* Modal Styling */
-
-.modal {
-    background-color: rgb(165, 168, 173);
-    position: fixed;
-    top:16%;
-    bottom: 16%;
-    left: 20%;
-    right: 20%;
-    
-}
-
-.modal-backgrond {
-    margin: auto;
-  width: 90%;
-  max-width: 40rem;
-  background-color: white;
-  border-radius: 1.5rem;
 }

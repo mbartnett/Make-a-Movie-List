@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,114 +8,125 @@
     <!--Bulma CDN link-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <!--Font Awesome CDN link-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Custom CSS links-->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Make a Movie List</title>
 </head>
 <!--The "custom" ID is being used to overwrite some Bulma styles-->
-<body id="custom">
-<header>
-</header>
-<!--Main flex container-->
-<main id="main-flex-container" class="has-background-black is-align-items-center">
-    <!--Left section-->
-    <section id="left">
-        <!--Logo, header, and subtitle-->
-        <!--<figure id="logo" class="image is-inline-block m-2">-->
-            <img class="logo-image m-2" src="assets/images/slate.png">
-          <!--</figure>-->
-        <h1 class="title is-1 has-text-white">MAKE A MOVIE LIST</h1>
-        <h2 class="subtitle is-4 has-text-white">You'll finally have an answer to the question, "What are your favorite movies?"</p>
-    </section>
-    <!--Right section-->
-    <section id="right">
-        <!--List name input-->
-        <div id="list-name" class="m-1 p-1">
-            <textarea id="text-area-list-name" class="textarea is large is-uppercase mr-2" rows="1" placeholder="NAME YOUR MOVIE LIST"></textarea>
-            <a class="list-name-button button mr-2" data-index="0"><i class="fa-solid fa-floppy-disk"></i></a>
-            <a id="list-save-button" class="button"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>            
-        </div>
-        <!--The border separating the list name and the list-->
-        <div id="separator"></div>
-        <!--Series of list items-->
-        <div id="list-item-1" class="m-1 p-1">
-            <textarea id="text-area-1" class="textarea is medium mr-2" rows="1" placeholder="List a movie name"></textarea>
-            <button id ="save-button-1" class="button mr-2 fa-solid fa-floppy-disk" data-index="1"></a>
-            <button id="movie-button-1" class="button js-modal-trigger button fa-solid fa-film" data-target="data-modal"></button>
-        </div>
-        <div id="list-item-2" class="m-1 p-1">
-            <textarea id="text-area-2" class="textarea is medium mr-2" rows="1"></textarea>
-            <button id ="save-button-2" class="button mr-2 fa-solid fa-floppy-disk" data-index="2"></button>
-            <button id="movie-button-2" class="button js-modal-trigger button fa-solid fa-film" data-target="data-modal"></button>
-        </div>
-        <div id="list-item-3" class="m-1 p-1">
-            <textarea id="text-area-3" class="textarea is medium mr-2" rows="1"></textarea>
-            <button id ="save-button-3" class="button mr-2 fa-solid fa-floppy-disk" data-index="3"></button>
-            <button id="movie-button-3" class="button js-modal-trigger button fa-solid fa-film" data-target="data-modal"></button>
-        </div>
-        <div id="list-item-4" class="m-1 p-1">
-            <textarea id="text-area-4" class="textarea is medium mr-2" rows="1"></textarea>
-            <button id ="save-button-4" class="button mr-2 fa-solid fa-floppy-disk" data-index="4"></button>
-            <button id="movie-button-4" class="button js-modal-trigger button fa-solid fa-film" data-target="data-modal"></button>
-        </div>
-        <div id="list-item-5" class="m-1 p-1">
-            <textarea id="text-area-5" class="textarea is medium mr-2" rows="1"></textarea>
-            <button id ="save-button-5" class="button mr-2 fa-solid fa-floppy-disk" data-index="5"></button>
-            <button id="movie-button-5" class="button js-modal-trigger button fa-solid fa-film" data-target="data-modal"></button>
-        </div>
-        <div id="list-item-6" class="m-1 p-1">
-            <textarea id="text-area-6" class="textarea is medium mr-2" rows="1"></textarea>
-            <button id ="save-button-6" class="button mr-2 fa-solid fa-floppy-disk" data-index="6"></button>
-            <button id="movie-button-6" class="button js-modal-trigger button fa-solid fa-film" data-target="data-modal"></button>
-        </div>
-        <div id="list-item-7" class="m-1 p-1">
-            <textarea id="text-area-7" class="textarea is medium mr-2" rows="1"></textarea>
-            <button id ="save-button-7" class="button mr-2 fa-solid fa-floppy-disk" data-index="7"></button>
-            <button id="movie-button-7" class="button js-modal-trigger button fa-solid fa-film" data-target="data-modal"></button>
-        </div>
-        <div id="list-item-8" class="m-1 p-1">
-            <textarea id="text-area-8" class="textarea is medium mr-2" rows="1"></textarea>
-            <button id ="save-button-8" class="button mr-2 fa-solid fa-floppy-disk" data-index="8"></button>
-            <button id="movie-button-8" class="button js-modal-trigger button fa-solid fa-film" data-target="data-modal"></button>
-        </div>
-        <div id="list-item-9" class="m-1 p-1">
-            <textarea id="text-area-9" class="textarea is medium mr-2" rows="1"></textarea>
-            <button id ="save-button-9"  class="button mr-2 fa-solid fa-floppy-disk" data-index="9"></button>
-            <button id="movie-button-9" class="button js-modal-trigger button fa-solid fa-film" data-target="data-modal"></button>
-        </div>
-        <div id="list-item-10" class="m-1 p-1">
-            <textarea id="text-area-10" class="textarea is medium mr-2" rows="1"></textarea>
-            <button id ="save-button-10"  class="button mr-2 fa-solid fa-floppy-disk" data-index="10"></button>
-            <button id="movie-button-10" class="button js-modal-trigger button fa-solid fa-film" data-target="data-modal"></button>
-        </div>
-    </section>
 
-    <!--Data modal-->
-    <section>
-        <div id="data-modal" class="modal">
-            <div class="modal-background"></div>
-            <div class="modal-header">
-                <p>Movie Results</p>
+<body id="custom">
+    <header>
+    </header>
+    <!--Main flex container-->
+    <main id="main-flex-container" class="has-background-black is-align-items-center">
+        <!--Left section-->
+        <section id="left">
+            <!--Logo, header, and subtitle-->
+            <!--<figure id="logo" class="image is-inline-block m-2">-->
+            <img class="logo-image m-2" src="assets/images/slate.png">
+            <!--</figure>-->
+            <h1 class="title is-1 has-text-white">MAKE A MOVIE LIST</h1>
+            <h2 class="subtitle is-4 has-text-white">You'll finally have an answer to the question, "What are your
+                favorite movies?"</p>
+        </section>
+        <!--Right section-->
+        <section id="right">
+            <!--List name input-->
+            <div id="list-name" class="m-1 p-1">
+                <textarea id="text-area-list-name" class="textarea is large is-uppercase mr-2" rows="1"
+                    placeholder="NAME YOUR MOVIE LIST"></textarea>
+                <a class="list-name-button button mr-2" data-index="0"><i class="fa-solid fa-floppy-disk"></i></a>
+                <a id="list-save-button" class="button"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
-            <div class="modal-content">
-            <div class="box">
-        
+            <!--The border separating the list name and the list-->
+            <div id="separator"></div>
+            <!--Series of list items-->
+            <div id="list-item-1" class="m-1 p-1">
+                <textarea id="text-area-1" class="textarea is medium mr-2" rows="1"
+                    placeholder="List a movie name"></textarea>
+                <button id="save-button-1" class="button mr-2 fa-solid fa-floppy-disk" data-index="1"></a>
+                    <button id="movie-button-1" class="button js-modal-trigger button fa-solid fa-film"
+                        data-target="data-modal"></button>
             </div>
+            <div id="list-item-2" class="m-1 p-1">
+                <textarea id="text-area-2" class="textarea is medium mr-2" rows="1"></textarea>
+                <button id="save-button-2" class="button mr-2 fa-solid fa-floppy-disk" data-index="2"></button>
+                <button id="movie-button-2" class="button js-modal-trigger button fa-solid fa-film"
+                    data-target="data-modal"></button>
             </div>
-            <button class="modal-close is-large" aria-label="close"></button>
-        </div>
-    </section>    
-    <div id="movies"></div>
-</main>
-<footer>
-</footer>
-<!--jQuery library and custom Javascript links-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>  
-<script src="assets/js/script.js"></script> 
-<script src="assets/js/molly.js"></script>
-<script src="assets/js/test-api.js"></script>
-<script src="./assets/js/script-error-modal.js"></script>
-<script src="./assets/js/local-storage.js"></script>
+            <div id="list-item-3" class="m-1 p-1">
+                <textarea id="text-area-3" class="textarea is medium mr-2" rows="1"></textarea>
+                <button id="save-button-3" class="button mr-2 fa-solid fa-floppy-disk" data-index="3"></button>
+                <button id="movie-button-3" class="button js-modal-trigger button fa-solid fa-film"
+                    data-target="data-modal"></button>
+            </div>
+            <div id="list-item-4" class="m-1 p-1">
+                <textarea id="text-area-4" class="textarea is medium mr-2" rows="1"></textarea>
+                <button id="save-button-4" class="button mr-2 fa-solid fa-floppy-disk" data-index="4"></button>
+                <button id="movie-button-4" class="button js-modal-trigger button fa-solid fa-film"
+                    data-target="data-modal"></button>
+            </div>
+            <div id="list-item-5" class="m-1 p-1">
+                <textarea id="text-area-5" class="textarea is medium mr-2" rows="1"></textarea>
+                <button id="save-button-5" class="button mr-2 fa-solid fa-floppy-disk" data-index="5"></button>
+                <button id="movie-button-5" class="button js-modal-trigger button fa-solid fa-film"
+                    data-target="data-modal"></button>
+            </div>
+            <div id="list-item-6" class="m-1 p-1">
+                <textarea id="text-area-6" class="textarea is medium mr-2" rows="1"></textarea>
+                <button id="save-button-6" class="button mr-2 fa-solid fa-floppy-disk" data-index="6"></button>
+                <button id="movie-button-6" class="button js-modal-trigger button fa-solid fa-film"
+                    data-target="data-modal"></button>
+            </div>
+            <div id="list-item-7" class="m-1 p-1">
+                <textarea id="text-area-7" class="textarea is medium mr-2" rows="1"></textarea>
+                <button id="save-button-7" class="button mr-2 fa-solid fa-floppy-disk" data-index="7"></button>
+                <button id="movie-button-7" class="button js-modal-trigger button fa-solid fa-film"
+                    data-target="data-modal"></button>
+            </div>
+            <div id="list-item-8" class="m-1 p-1">
+                <textarea id="text-area-8" class="textarea is medium mr-2" rows="1"></textarea>
+                <button id="save-button-8" class="button mr-2 fa-solid fa-floppy-disk" data-index="8"></button>
+                <button id="movie-button-8" class="button js-modal-trigger button fa-solid fa-film"
+                    data-target="data-modal"></button>
+            </div>
+            <div id="list-item-9" class="m-1 p-1">
+                <textarea id="text-area-9" class="textarea is medium mr-2" rows="1"></textarea>
+                <button id="save-button-9" class="button mr-2 fa-solid fa-floppy-disk" data-index="9"></button>
+                <button id="movie-button-9" class="button js-modal-trigger button fa-solid fa-film"
+                    data-target="data-modal"></button>
+            </div>
+            <div id="list-item-10" class="m-1 p-1">
+                <textarea id="text-area-10" class="textarea is medium mr-2" rows="1"></textarea>
+                <button id="save-button-10" class="button mr-2 fa-solid fa-floppy-disk" data-index="10"></button>
+                <button id="movie-button-10" class="button js-modal-trigger button fa-solid fa-film"
+                    data-target="data-modal"></button>
+            </div>
+        </section>
+
+        <!--Data modal-->
+        <section>
+            <div id="data-modal" class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-header"></div>
+                <div class="modal-content">
+                    <div class="box"></div>
+                    <button class="modal-close is-large" aria-label="close"></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <!--jQuery library and custom Javascript links-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/molly.js"></script>
+    <script src="assets/js/test-api.js"></script>
+    <script src="./assets/js/script-error-modal.js"></script>
+    <script src="./assets/js/local-storage.js"></script>
 </body>
 </html>
