@@ -11,7 +11,7 @@
 
 #custom h2 {
     font-family: "Poppins", sans-serif !important;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
 }
 
@@ -25,6 +25,10 @@
     font-family: "Poppins", sans-serif !important;
     font-weight: 400;
     font-size: 16px;
+}
+
+.modal p {
+    padding: 2% 20%;
 }
 
 /* Logo styles */
@@ -131,16 +135,21 @@ textarea {
     left: 20%;
     right: 20%;
     text-align: center;
+    margin: auto;
 }
 
 /* .modal-background {
     margin: auto;
     width: 90%;
     background-color: #6699ff;
-} */
+}  */
 
 .movie-image {
-    max-height: 270px;
+    max-height: 350px;
+}
+
+.modal-close {
+    background-color: red !important;
 }
 
 /* Media queries for height and width */
