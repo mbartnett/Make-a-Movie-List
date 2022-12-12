@@ -7,21 +7,6 @@ for (var index = 1;
   saveButton.myParam = index
 }
 
-function fetchRuntime(event) {
-  var apiKey2 = "151fd4610ef4afc0c93b050f47566952";
-  var searchTitle = document.getElementById("text-area-" + index);
-  var url2 = "https://api.themoviedb.org/3/search/movie?api_key=" + apiKey2 + "&query=" + searchTitle;
-
-  fetch(url2) 
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data.results[0].searchTitle);
-      console.log(data.results[0].release_date);
-    });
-  }
-
 // Function to call api for movies
 function fetchMovies(event) {
   console.log("calling fetchMovies");
@@ -51,27 +36,14 @@ function fetchMovies(event) {
 
       // for (let i = 0; i < data.Search.length; i++) {
       for (let i = 0; i < 1; i++) {
-        // Title
-        html += `<h3>${data.Search[i].Title}</h3>`;
-        // html += '<h3>' + data.Search[i].Title + '</h3>'
-
-        // Year
-        html += `<h4>${data.Search[i].Year}</h4>`;
-
-        // // Plot
-        // html += `<p>${data.Search[i].Plot}</p>`;
-
-        // // Type
-        // html += `<h5>${data.Search[i].Type}</h5>`;
-
         // Image
         html += `<img class="movie-image" src="${data.Search[i].Poster}" alt="${data.Search[i].Title} image">`;
 
-        // Add a space after the image
-        html += `<br><br>Press ESC to close`;
+        // Year
+        html += `<h4>${data.Search[i].Year}</h4>`;
       }
 
-      document.getElementById("data-modal").innerHTML = html;
+      document.getElementById("api1").innerHTML = html;
     })
     .catch((error) => {
       //handle error
@@ -79,3 +51,42 @@ function fetchMovies(event) {
       console.log("error: " + error);
     });
 }
+
+
+// Event listener for save button
+for (var index =  1;
+  index < 11; 
+  index++) {
+    var saveButton = document.getElementById("movie-button-" + index)
+    saveButton.addEventListener("click", fetchRuntime);
+    saveButton.myParam = index
+}
+// Function to call second api for movies
+function fetchRuntime(event) {
+  console.log(event.target.myParam)
+  var index = event.target.myParam
+  var apiKey2 = "151fd4610ef4afc0c93b050f47566952";
+  var searchTitle = document.getElementById("text-area-" + index).value;
+  console.log(searchTitle)
+  var url2 = "https://api.themoviedb.org/3/search/movie?api_key=" + apiKey2 + "&query=" + searchTitle;
+
+  fetch(url2) 
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      var html = "";
+
+      console.log(data.results)
+    console.log(data.results[0].title);
+    console.log(data.results[0].release_date);
+
+    //adding title and release date to html
+    html += `<h3>${data.results[0].title}</h3>`;
+    html += `<p>${data.results[0].overview}</p>`;
+    // Add a space after the image
+    html += `<br><br>Press ESC to close`;
+
+    document.getElementById("api2").innerHTML = html;
+    });
+  }
