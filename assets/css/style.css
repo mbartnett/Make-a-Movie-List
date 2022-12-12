@@ -140,7 +140,7 @@ textarea {
 } */
 
 .movie-image {
-    min-height: 500px;
+    max-height: 270px;
 }
 
 /* Media queries for height and width */
