@@ -1,5 +1,5 @@
 # Make a Movie List
-An top ten movie list generator built using HTML, CSS, JavaScript, and APIs
+A top ten movie list generator built using HTML, CSS, JavaScript, and APIs
 
 ## Usage
 When a user enters the name of a movie into the list, they are able to save it into the browser’s local storage by clicking the "save" button. Then, the option to view more information about the saved movie is available by clicking the "movie" button. 
