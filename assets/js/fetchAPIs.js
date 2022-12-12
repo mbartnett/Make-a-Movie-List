@@ -85,7 +85,7 @@ function fetchRuntime(event) {
     html += `<h3>${data.results[0].title}</h3>`;
     html += `<p>${data.results[0].overview}</p>`;
     // Add a space after the image
-    html += `<br><br>Press ESC to close`;
+    html += `<br><br>`;
 
     document.getElementById("api2").innerHTML = html;
     });
