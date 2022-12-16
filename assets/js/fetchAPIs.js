@@ -16,7 +16,7 @@ function fetchMovies(event) {
   var apiKey = "1181861f";
   //   var url = `http://www.omdbapi.com/?i=tt3896198&apikey=1181861f&s=batman`
   var searchTitle = document.getElementById("text-area-" + index).value;
-  var url = `http://www.omdbapi.com/?i=tt3896198&apikey=${apiKey}&s=${searchTitle}`;
+  var url = `https://www.omdbapi.com/?i=tt3896198&apikey=${apiKey}&s=${searchTitle}`;
 
   console.log("input: " + JSON.stringify(searchTitle));
   console.log("url: " + url);
